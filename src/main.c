@@ -2,8 +2,18 @@
 #include <SDL2/SDL.h>
 #include "./constants.h"
 
-int main()
-{
+int i = 0;
+int arr[100];
 
-	printf("\nHello World");
+int main() {
+
+	while(i < 100) {
+		
+		arr[i] = i;
+		i++;
+	}
+	for (int j = 0; j < 100; j++) {
+
+		printf("\n%d", arr[j]);
+	}
 }
